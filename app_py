@@ -6,7 +6,7 @@ st.set_page_config(page_title="Video Games Dashboard", layout="wide", page_icon=
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("normalized_dataset.csv")
+    return pd.read_csv("https://raw.githubusercontent.com/Josue-Aldebaran-G-L/Practica-3-AVD/main/nba_all_elo.csv")
 
 df = load_data()
 
