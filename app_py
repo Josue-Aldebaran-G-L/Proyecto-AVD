@@ -6,7 +6,8 @@ st.set_page_config(page_title="Video Games Dashboard", layout="wide", page_icon=
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("https://raw.githubusercontent.com/Josue-Aldebaran-G-L/Practica-3-AVD/main/nba_all_elo.csv")
+    url = "https://www.kaggle.com/datasets/artermiloff/steam-games-dataset?select=games_march2025_full.csv"
+    return pd.read_csv(url)
 
 df = load_data()
 
